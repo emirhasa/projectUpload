@@ -18,7 +18,7 @@ namespace Seminarski_fitness_centar_IB130116.DB
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=tcp:p1849dbserver.database.windows.net,1433;Initial Catalog=p1849_db;Persist Security Info=False;User ID=emirhasa;Password=9uB4?o9y;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            optionsBuilder.UseSqlServer("Izbrisano for discretion");
         }
     }
 }
