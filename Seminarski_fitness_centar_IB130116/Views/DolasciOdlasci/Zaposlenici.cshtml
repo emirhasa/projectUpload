@@ -1,0 +1,20 @@
+﻿@using Seminarski_fitness_centar_IB130116.Helper
+
+@{
+    ViewData["Title"] = "Lista zaposlenika";
+}
+
+@{ User user = Context.GetLoggedUser(); }
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+    <div class="jumbotron">
+        <ul>
+        @foreach (var zaposlenik in Model)
+        {
+            <li>Zaposlenik: @zaposlenik.Username | @Html.ActionLink("Pregledaj dolaske", "AdminDolasciDetalji", "DolasciOdlasci", routeValues: new { ZaposlenikId = zaposlenik.UserId }, htmlAttributes: null )</li>
+        }
+        </ul>
+
+    </div>
+    </div>
